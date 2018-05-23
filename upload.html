@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+ <head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>游民文库</title>
+
+<!-- Bootstrap -->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+<link rel="stylesheet" type="text/css" href="css/flat-ui.min.css"/>
+<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
+<link rel="stylesheet" type="text/css" href="css/wenku.css"/>
+<link rel="shortcut icon" href="img/favicon.ico">
+<!--[if lt IE 9]>
+  <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+  <body id="wk-upload">
+  	<div class="container-fluid wk-header">
+  		<div class="container">
+			<div class="col-xs-6">
+				<a href="/" title="游民文库">
+					<img alt="游民文库" class="wk-logo" src="img/logo.png"/>
+				</a>
+			</div>
+			<div class="col-xs-6">
+				<form class="pull-right" action="/search.html" target="_blank" method="get" role="search">
+					<div class="input-group input-group-lg">
+						<input type="text" required="required" name="wd" placeholder="请输入搜索关键字" class="form-control">
+						<span class="input-group-btn"><button type="submit" class="btn btn-default">文库搜索</button></span>
+					</div>
+				</form>
+			</div>
+	  	</div>
+  	</div>
+	<nav class="container-fluid navbar-inverse navbar navbar-default" role="navigation">
+		<div class="container">
+			<ul class="nav navbar-nav">
+				<li><a href="index.html">首页</a></li>
+				<li><a href="list.html">教育频道</a></li>
+				<li><a href="list.html">专业资料</a></li>
+				<li><a href="list.html">实用文档</a></li>
+				<li><a href="list.html">资格考试</a></li>
+				<li><a href="list.html">生活休闲</a></li>
+			</ul>
+			 <ul class="nav navbar-nav navbar-right">
+		      <li class="active"><a href="upload.html"><span class="fa fa-upload"></span> 上传文档</a></li>
+		      <li><a href="user.html"><span class="fa fa-user"></span> 会员中心</a></li>
+		    </ul>
+		</div>
+	</nav>
+
+
+
+	<div class="container">
+		<div class="row">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<div class="strong">文档上传</div>
+				</div>
+				<div class="panel-body">
+					<div class="wk-tips text-center">
+						每成功上传一篇公开文档，可获取财富值+2奖励
+					</div>
+					<div class="col-xs-8">
+						<form class="form-horizontal" role="form">
+							<div class="form-group">
+								<label class="col-sm-2 control-label">文档上传 <i class="text-danger">*</i></label>
+								<div class="col-sm-10">
+									<input type="file" class="form-control" name="file" placeholder="请上传一篇文档">
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-sm-2 control-label">文档名称 <i class="text-danger">*</i></label>
+								<div class="col-sm-10">
+									<input type="text" class="form-control" name="filename" placeholder="请输入文档名称">
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-sm-2 control-label">文档分类 <i class="text-danger">*</i></label>
+								<div class="col-sm-10">
+									<input type="text" class="form-control" id="lastname" placeholder="请输入姓">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="lastname" class="col-sm-2 control-label">文档标签</label>
+								<div class="col-sm-10">
+									<input type="text" name="tags" class="form-control" placeholder="多个标签，请用逗号分隔">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="lastname" class="col-sm-2 control-label">文档简介</label>
+								<div class="col-sm-10">
+									<textarea name="intro" rows="6" class="form-control" placeholder="请输入文档的相关简介"></textarea>
+								</div>
+							</div>
+						</form>
+					</div>
+				
+					<div class="col-xs-4">
+						<button type="button" class="btn btn-block btn-primary btn-lg">确定上传文档</button>
+						<div class="panel panel-default wk-mgt-15px">
+							<div class="panel-body wk-nopadding">
+								<div class="strong">温馨提示</div>
+								<div class="help-block">
+									1.带有 <i class="text-danger">*</i> 为必填项。同时建议文档标签和文档简介，方便自己和他人能更快更准确地找到需求文档。
+								</div>
+								<div class="help-block">
+									2.您可以上传日常积累和撰写的文档资料，如模板、总结等。
+								</div>
+								<div class="help-block">
+									3.目前支持的文档类型：doc，docx，ppt，pptx，xls,xlsx，vsd，pot，pps，rtf，	wps，et，dps，pdf，txt，epub
+								</div>
+								<div class="help-block">4.上传涉及侵权内容的文档将会被移除。</div>
+								<div class="help-block">5.上传有问题需要帮助？查看文库帮助和意见反馈</div>
+								<div class="help-block">6.为营造绿色网络环境，严禁上传含有淫秽色情及低俗信息等文档，让我们一起携手共同打造健康文库</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+		</div>
+	</div>
+
+
+
+
+	<div class="container-fluid wk-footer">
+    	<div class="container">
+    		<div class="row wk-flink">
+    			<div class="col-xs-12">
+    				<div><strong>友情链接</strong></div>
+    				<div class="help-block">
+    					<a href="#">微友网盘搜索</a>
+    					<a href="#">赛纷网</a>
+    					<a href="#">广西南宁游民网络科技</a>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+    <div class="container-fluid wk-footer-dark">
+    	<div class="container">
+    		<div class="row">
+    			<div class="col-xs-12 text-center wk-help">
+    				<a href="#">
+    					手机版
+    				</a>
+    				 | 
+    				 <a href="#">关于我们</a> | 
+    				 <a href="#">帮助中心</a> | 
+    				 <a href="#">搜职位</a> | 
+    				 <a href="#">招人才</a> | 
+    				 <a href="#">意见反馈</a> | 
+    				 <a href="#">合作共赢</a>
+    			</div>
+    			<div class="col-xs-12 text-center">
+    				联系地址：广西南宁西乡塘区火炬路17号金达花园   联系电话：0771-0000000
+    			</div>
+    			<div class="col-xs-12 text-center">
+    				©2016 Qianlima.it  桂ICP备16006940号-1
+    			</div>
+    			<div class="col-xs-12 text-center">
+    				广西南宁游民网络科技 版权所有
+    			</div>
+    			<div class="col-xs-12 text-center">
+    				Powered By 游民CMS
+    			</div>
+    		</div>
+    	</div>
+    </div>
+
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

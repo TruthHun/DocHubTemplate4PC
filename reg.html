@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+ <head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>游民文库</title>
+
+<!-- Bootstrap -->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+<link rel="stylesheet" type="text/css" href="css/flat-ui.min.css"/>
+<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
+<link rel="stylesheet" type="text/css" href="css/wenku.css"/>
+<link rel="shortcut icon" href="img/favicon.ico">
+<!--[if lt IE 9]>
+  <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+  <body id="wk-reg">
+  	<div class="container-fluid wk-header">
+  		<div class="container">
+			<div class="col-xs-6">
+				<a href="/" title="游民文库">
+					<img alt="游民文库" class="wk-logo" src="img/logo.png"/>
+				</a>
+			</div>
+			<div class="col-xs-6">
+				<form class="pull-right" action="/search.html" target="_blank" method="get" role="search">
+					<div class="input-group input-group-lg">
+						<input type="text" required="required" name="wd" placeholder="请输入搜索关键字" class="form-control">
+						<span class="input-group-btn"><button type="submit" class="btn btn-default">文库搜索</button></span>
+					</div>
+				</form>
+			</div>
+	  	</div>
+  	</div>
+	<nav class="container-fluid navbar-inverse navbar navbar-default" role="navigation">
+		<div class="container">
+			<ul class="nav navbar-nav">
+				<li><a href="index.html">首页</a></li>
+				<li><a href="list.html">教育频道</a></li>
+				<li><a href="list.html">专业资料</a></li>
+				<li><a href="list.html">实用文档</a></li>
+				<li><a href="list.html">资格考试</a></li>
+				<li><a href="list.html">生活休闲</a></li>
+			</ul>
+			 <ul class="nav navbar-nav navbar-right">
+		      <li><a href="upload.html"><span class="fa fa-upload"></span> 上传文档</a></li>
+		      <li class="active"><a href="user.html"><span class="fa fa-user"></span> 会员中心</a></li>
+		    </ul>
+		</div>
+	</nav>
+
+
+
+
+	<div class="container">
+		<div class="row">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<div class="strong">会员注册</div>
+				</div>
+				<div class="panel-body">
+					<div class="col-xs-8">
+						<form class="form-horizontal" role="form">
+							<div class="form-group">
+								<label class="col-sm-2 control-label">注册邮箱 <i class="text-danger">*</i></label>
+								<div class="col-sm-10">
+									<input type="email" class="form-control" required="required" name="email" placeholder="请输入注册邮箱">
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-sm-2 control-label">邮箱验证码 <i class="text-danger">*</i></label>
+								<div class="col-sm-6">
+									<input type="text" class="form-control" name="code" required="required" placeholder="请输入您的注册邮箱收到的验证码">
+								</div>
+								<div class="col-xs-4">
+									<a href="#" class="btn btn-success btn-block">获取邮箱验证码</a>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="lastname" class="col-sm-2 control-label">用户名 <i class="text-danger">*</i></label>
+								<div class="col-sm-10">
+									<input type="text" name="username" class="form-control" placeholder="请输入您的用户名，长度2-16个字符">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="lastname" class="col-sm-2 control-label">登录密码 <i class="text-danger">*</i></label>
+								<div class="col-sm-10">
+									<input type="password" name="password" class="form-control" placeholder="请输入您的登录密码">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="lastname" class="col-sm-2 control-label">确认密码 <i class="text-danger">*</i></label>
+								<div class="col-sm-10">
+									<input type="password" name="repassword" class="form-control" placeholder="请再次输入您的登录密码">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="lastname" class="col-sm-2 control-label">个性签名</label>
+								<div class="col-sm-10">
+									<textarea name="intro" rows="4" class="form-control" placeholder="请输入您的个性签名，让更多的人认识你、了解你"></textarea>
+								</div>
+							</div>
+							<button type="button" class="btn btn-block btn-primary btn-lg">马上注册</button>
+							<div class="help-block">
+								<a href="login.html">已有账号？去登录</a>
+								<a href="#" class="pull-right">忘记密码？找回密码</a>
+							</div>
+						</form>
+					</div>
+				
+					<div class="col-xs-4">
+						<div class="panel panel-default wk-mgt-15px">
+							<div class="panel-body wk-nopadding">
+								<div class="strong">温馨提示</div>
+								<div class="help-block">
+									1.带有 <i class="text-danger">*</i> 为必填项。
+								</div>
+								<div class="help-block">
+									2.用户注册的邮箱验证码需要通过邮箱获取，请注意发送到您邮箱的验证码。
+								</div>
+								<div class="help-block">
+									3.密码长度不能少于6个字符，同时建议用户密码使用英文大小写、数字和标点符号混合。
+								</div>
+								<div class="help-block">
+									4.用户名长度，限制在2-16个字符。
+								</div>
+								<div class="help-block">
+									5.用户的个性签名限制在255个字符，禁止非法利用个性签名。
+								</div>
+								<div class="help-block">
+									6.用户注册成功之后，可以在会员中心更换自己的头像。
+								</div>
+								<div class="help-block">
+									7.请自觉遵守国家法律法规和道德文明，以及<a class="text-primary" target="_blank" href="#">《文库守则》</a>。
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+		</div>
+	</div>
+
+
+
+
+
+
+	<div class="container-fluid wk-footer">
+    	<div class="container">
+    		<div class="row wk-flink">
+    			<div class="col-xs-12">
+    				<div><strong>友情链接</strong></div>
+    				<div class="help-block">
+    					<a href="#">微友网盘搜索</a>
+    					<a href="#">赛纷网</a>
+    					<a href="#">广西南宁游民网络科技</a>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+    <div class="container-fluid wk-footer-dark">
+    	<div class="container">
+    		<div class="row">
+    			<div class="col-xs-12 text-center wk-help">
+    				<a href="#">
+    					手机版
+    				</a>
+    				 | 
+    				 <a href="#">关于我们</a> | 
+    				 <a href="#">帮助中心</a> | 
+    				 <a href="#">搜职位</a> | 
+    				 <a href="#">招人才</a> | 
+    				 <a href="#">意见反馈</a> | 
+    				 <a href="#">合作共赢</a>
+    			</div>
+    			<div class="col-xs-12 text-center">
+    				联系地址：广西南宁西乡塘区火炬路17号金达花园   联系电话：0771-0000000
+    			</div>
+    			<div class="col-xs-12 text-center">
+    				©2016 Qianlima.it  桂ICP备16006940号-1
+    			</div>
+    			<div class="col-xs-12 text-center">
+    				广西南宁游民网络科技 版权所有
+    			</div>
+    			<div class="col-xs-12 text-center">
+    				Powered By 游民CMS
+    			</div>
+    		</div>
+    	</div>
+    </div>
+
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
